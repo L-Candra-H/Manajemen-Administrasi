@@ -1,0 +1,215 @@
+body.dashboard {
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.wrapper,
+.content-wrapper {
+  padding: 20px;
+}
+
+.main-sidebar {
+  background-color: #352525 !important;
+  /* atau #1e1e2f untuk nuansa gelap */
+  width: 260px !important;
+  /* sudah fix lebar sidebar */
+}
+
+.main-sidebar .nav-link,
+.main-sidebar .brand-text {
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+/* 🔥 Tambahan khusus agar teks menu sidebar bisa turun baris */
+.main-sidebar .nav-link p {
+  white-space: normal !important;
+  /* biar bisa wrap */
+  word-break: break-word;
+  /* pecah kata panjang */
+  line-height: 1.3;
+  /* lebih rapi */
+  margin-right: 20px;
+  /* beri jarak dari ikon panah */
+}
+
+.main-sidebar .nav-link i.right {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* sejajarkan ikon panah di tengah teks */
+}
+
+.navbar {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+  backdrop-filter: none !important;
+}
+
+.navbar a,
+.navbar .nav-link {
+  color: #333 !important;
+  font-weight: 500;
+}
+
+.login-page {
+  position: relative;
+  height: 100vh;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+body.login-page {
+  background: url('/manajemen_administrasi/public/assets/img/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: block !important;
+  /* override flex */
+}
+
+.login-box {
+  position: fixed !important;
+  top: 15% !important;
+  right: 5% !important;
+  left: auto !important;
+  bottom: auto !important;
+  width: 320px !important;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  /* transparan */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 9999;
+  backdrop-filter: blur(6px);
+  /* efek kaca buram */
+}
+
+@media (max-width: 576px) {
+  .login-box {
+    width: 90% !important;
+    right: 5% !important;
+    left: 5% !important;
+  }
+
+  .table th,
+  .table td {
+    vertical-align: middle;
+  }
+}
+
+/* --- Tambahan khusus cetak_data_pegawai --- */
+
+/* Garis bawah header logo + teks */
+.garis-header {
+  width: 100%;
+  max-width: 300px;
+  border-bottom: 2px solid #000;
+  margin-bottom: 10px;
+}
+
+/* Judul utama biodata */
+.judul-biodata {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 25px;
+  /* jarak spasi ke bawah */
+}
+
+.data-induk {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.data-induk td {
+  padding: 4px 0;
+}
+
+/* Subjudul A, B, C */
+.subjudul {
+  border: 1px solid #000;
+  background-color: #f2f2f2;
+  /* arsir abu-abu muda */
+  padding: 8px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Tabel isi */
+.isi-tabel {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+.isi-tabel th,
+.isi-tabel td {
+  border: 1px solid #000;
+  padding: 6px;
+}
+
+/* Tabel dengan border penuh (B dan C) */
+.tabel-bordered {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tabel-bordered th,
+.tabel-bordered td {
+  border: 1px solid #000;
+  padding: 6px;
+  text-align: left;
+}
+
+/* Placeholder foto pegawai */
+.foto-placeholder {
+  border: 1px solid #000;
+  width: 80px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer-info {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 14px;
+}
+
+/* aturan khusus print */
+@media print {
+
+  .main-sidebar,
+  .navbar,
+  .main-footer,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: #fff !important;
+  }
+
+  .content-wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+}

@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Jika URL belum mengarah ke /public, arahkan ke sana
+RewriteCond %{REQUEST_URI} !^/manajemen_administrasi/public/
+RewriteRule ^(.*)$ public/$1 [L]
