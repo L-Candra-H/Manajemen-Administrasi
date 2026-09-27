@@ -6,7 +6,7 @@ return [
         'host' => 'localhost',
         'name' => 'manajemen_administrasi',
         'user' => 'root',
-        'pass' => '',
+        'pass' => 'xxx',
         'charset' => 'utf8mb4'
     ]
 ];
