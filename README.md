@@ -1,1 +1,2 @@
-untuk DB bisa kontak admin
+Program bantu untuk administrasi surat menyurat secara online / paperless
+
